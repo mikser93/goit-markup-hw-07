@@ -21,33 +21,41 @@
       referrerpolicy="no-referrer"
     />
     <!--Add css-->
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!--Header-->
     <header class="header">
       <div class="container nav-flex">
         <nav class="navigation">
-          <a class="logo" href="./index.html"><span>Web</span>Studio</a>
-          <ul class="list nav">
-            <li class="list-item"><a class="link" href="./index.html">Студия</a></li>
-            <li class="list-item">
-              <a class="link current" href="./portfolio.html">Портфолио</a>
+          <a class="navigation__logo" href="./index.html">
+            <span class="navigation__logo--web">Web</span>Studio</a
+          >
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="./index.html">Студия</a>
             </li>
-            <li class="list-item"><a class="link" href="#">Контакты</a></li>
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link--current" href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Контакты</a>
+            </li>
           </ul>
         </nav>
-        <ul class="list contact">
-          <li class="contact-item">
-            <a class="info-link" href="mailto:info@devstudio.com">
-              <svg class="icon-mail icons-header">
+        <ul class="contact">
+          <li class="contact__item">
+            <a class="contact__link" href="mailto:info@devstudio.com">
+              <svg class="contact__link--mail icons__header">
                 <use href="./images/symbol-defs.svg#icon-mail"></use></svg
               >info@devstudio.com</a
             >
           </li>
-          <li class="contact-item">
-            <a class="info-link" href="tel:+380961111111">
-              <svg class="icon-smartphone icons-header">
+          <li class="contact__item">
+            <a class="contact__link" href="tel:+380961111111">
+              <svg class="contact__link--smartphone icons__header">
                 <use href="./images/symbol-defs.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -62,23 +70,28 @@
       <section class="portfolio">
         <div class="container">
           <h1 class="hidden">Наши работы</h1>
-          <ul class="portfolio-list">
-            <li class="portfolio-list-item"><button class="filter-btn all cursor">Все</button></li>
-            <li class="portfolio-list-item">
-              <button class="filter-btn websites">Веб-сайты</button>
+          <ul class="portfolio__list">
+            <li class="portfolio__item">
+              <button class="portfolio__btn cursor">Все</button>
             </li>
-            <li class="portfolio-list-item">
-              <button class="filter-btn application">Приложения</button>
+            <li class="portfolio__item">
+              <button class="portfolio__btn">Веб-сайты</button>
             </li>
-            <li class="portfolio-list-item"><button class="filter-btn design">Дизайн</button></li>
-            <li class="portfolio-list-item">
-              <button class="filter-btn marketing">Маркетинг</button>
+            <li class="portfolio__item">
+              <button class="portfolio__btn">Приложения</button>
+            </li>
+            <li class="portfolio__item">
+              <button class="portfolio__btn">Дизайн</button>
+            </li>
+            <li class="portfolio__item">
+              <button class="portfolio__btn">Маркетинг</button>
             </li>
           </ul>
-          <!--Preview list-->
-          <ul class="preview-list">
-            <li class="preview-section-list">
-              <div class="preview-section-wraper">
+
+          <!--Preview-->
+          <ul class="preview">
+            <li class="preview__item">
+              <div class="preview__wraper">
                 <img
                   class="img"
                   src="./images/img.jpg"
@@ -91,13 +104,13 @@
                   частном лице.
                 </p>
               </div>
-              <div class="preview-title-sub">
+              <div class="preview__title">
                 <h2>Технокряк</h2>
                 <p>Веб-сайт</p>
               </div>
             </li>
-            <li class="preview-section-list">
-              <div class="preview-section-wraper">
+            <li class="preview__item">
+              <div class="preview__wraper">
                 <img
                   class="img"
                   src="./images/img-1.jpg"
@@ -110,13 +123,13 @@
                   частном лице.
                 </p>
               </div>
-              <div class="preview-title-sub">
+              <div class="preview__title">
                 <h2>Постер New Orlean vs Golden Star</h2>
                 <p>Дизайн</p>
               </div>
             </li>
-            <li class="preview-section-list">
-              <div class="preview-section-wraper">
+            <li class="preview__item">
+              <div class="preview__wraper">
                 <img
                   class="img"
                   src="./images/img-2.jpg"
@@ -129,13 +142,13 @@
                   частном лице.
                 </p>
               </div>
-              <div class="preview-title-sub">
+              <div class="preview__title">
                 <h2>Ресторан Seafood</h2>
                 <p>Приложение</p>
               </div>
             </li>
-            <li class="preview-section-list">
-              <div class="preview-section-wraper">
+            <li class="preview__item">
+              <div class="preview__wraper">
                 <img
                   class="img"
                   src="./images/img-3.jpg"
@@ -148,13 +161,13 @@
                   частном лице.
                 </p>
               </div>
-              <div class="preview-title-sub">
+              <div class="preview__title">
                 <h2>Проект Prime</h2>
                 <p>Маркетинг</p>
               </div>
             </li>
-            <li class="preview-section-list">
-              <div class="preview-section-wraper">
+            <li class="preview__item">
+              <div class="preview__wraper">
                 <img
                   class="img"
                   src="./images/img-4.jpg"
@@ -167,13 +180,13 @@
                   частном лице.
                 </p>
               </div>
-              <div class="preview-title-sub">
+              <div class="preview__title">
                 <h2>Проект Boxes</h2>
                 <p>Приложение</p>
               </div>
             </li>
-            <li class="preview-section-list">
-              <div class="preview-section-wraper">
+            <li class="preview__item">
+              <div class="preview__wraper">
                 <img
                   class="img"
                   src="./images/img-5.jpg"
@@ -186,13 +199,13 @@
                   частном лице.
                 </p>
               </div>
-              <div class="preview-title-sub">
+              <div class="preview__title">
                 <h2>Inspiration has no Borders</h2>
                 <p>Веб-сайт</p>
               </div>
             </li>
-            <li class="preview-section-list">
-              <div class="preview-section-wraper">
+            <li class="preview__item">
+              <div class="preview__wraper">
                 <img
                   class="img"
                   src="./images/img-6.jpg"
@@ -205,13 +218,13 @@
                   частном лице.
                 </p>
               </div>
-              <div class="preview-title-sub">
+              <div class="preview__title">
                 <h2>Издание Limited Edition</h2>
                 <p>Дизайн</p>
               </div>
             </li>
-            <li class="preview-section-list">
-              <div class="preview-section-wraper">
+            <li class="preview__item">
+              <div class="preview__wraper">
                 <img
                   class="img"
                   src="./images/img-7.jpg"
@@ -224,13 +237,13 @@
                   частном лице.
                 </p>
               </div>
-              <div class="preview-title-sub">
+              <div class="preview__title">
                 <h2>Проект LAB</h2>
                 <p>Маркетинг</p>
               </div>
             </li>
-            <li class="preview-section-list">
-              <div class="preview-section-wraper">
+            <li class="preview__item">
+              <div class="preview__wraper">
                 <img
                   class="img"
                   src="./images/img-8.jpg"
@@ -243,7 +256,7 @@
                   частном лице.
                 </p>
               </div>
-              <div class="preview-title-sub">
+              <div class="preview__title">
                 <h2>Growing Business</h2>
                 <p>Приложение</p>
               </div>
@@ -254,57 +267,59 @@
     </main>
 
     <!--Footer-->
-    <footer class="footer-section">
-      <div class="container footer">
-        <div class="adress">
-          <a class="logo-footer" href="./index.html"><span class="footer-span">Web</span>Studio</a>
-          <address class="address-footer">
-            <ul class="list-footer">
-              <li class="footer-item">
+    <footer class="footer section">
+      <div class="footer__container">
+        <div class="footer__adress">
+          <a class="footer__logo" href="./index.html"
+            ><span class="footer__logo--span">Web</span>Studio
+          </a>
+          <address class="address">
+            <ul class="address__list">
+              <li class="address__item">
                 <a
-                  class="maps-link"
+                  class="address__link--maps"
                   href="https://goo.gl/maps/2sakZAkhQSuqeB8N9"
                   target="_blank"
                   rel="noopener noreferrer"
-                  >г. Киев, пр-т Леси Украинки, 26</a
-                >
+                  >г. Киев, пр-т Леси Украинки, 26
+                </a>
               </li>
-              <li class="footer-item">
-                <a class="address-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <li class="address__item">
+                <a class="address__link" href="mailto:info@devstudio.com"> info@devstudio.com </a>
               </li>
-              <li class="footer-item">
-                <a class="address-link" href="tel:+380961111111">+38 096 111 11 11</a>
+              <li class="address__item">
+                <a class="address__link" href="tel:+380961111111"> +38 096 111 11 11 </a>
               </li>
             </ul>
           </address>
         </div>
         <div class="joinus">
-          <h3 class="joinus-title">Присоединяйтесь</h3>
-          <ul class="list joinus">
-            <li class="joinus-item">
-              <a class="joinus-link" href="https://www.instagram.com">
-                <svg class="joinus-icon" width="20" height="20">
+          <h3 class="joinus__title">Присоединяйтесь</h3>
+          <ul class="joinus__list">
+            <li class="joinus__item">
+              <a class="joinus__link" href="https://www.instagram.com">
+                <svg class="joinus__icon" width="20" height="20">
                   <use href="./images/symbol-defs.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="joinus-item">
-              <a class="joinus-link" href="https://twitter.com">
-                <svg class="joinus-icon" width="20" height="20">
+            <li class="joinus__item">
+              <a class="joinus__link" href="https://twitter.com">
+                <svg class="joinus__icon" width="20" height="20">
                   <use href="./images/symbol-defs.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="joinus-item">
-              <a class="joinus-link" href="https://facebook.com">
-                <svg class="joinus-icon" width="20" height="20">
+            <li class="joinus__item">
+              <a class="joinus__link" href="https://facebook.com">
+                <svg class="joinus__icon" width="20" height="20">
                   <use href="./images/symbol-defs.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="joinus-item">
-              <a class="joinus-link" href="https://www.linkedin.com">
-                <svg class="joinus-icon" width="20" height="20">
+            <li class="joinus__item">
+              <a class="joinus__link" href="https://www.linkedin.com">
+                <svg class="joinus__icon" width="20" height="20">
                   <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -312,12 +327,12 @@
           </ul>
         </div>
         <div class="subscribe">
-          <h3 class="subscibe-title">Подпишитесь на рассылку</h3>
-          <form class="subscribe-form">
-            <input class="subscribe-input" type="text" name="name" placeholder="E-mail" />
-            <button class="subscribe-button button" type="button">
+          <h3 class="subscribe__title">Подпишитесь на рассылку</h3>
+          <form class="subscribe__form">
+            <input class="subscribe__input" type="text" name="name" placeholder="E-mail" />
+            <button class="button subscribe__button" type="button">
               Подписаться
-              <svg class="subscribe-button__icon" width="24" height="24">
+              <svg class="subscribe__button--icon" width="24" height="24">
                 <use href="./images/symbol-defs.svg#icon-send"></use>
               </svg>
             </button>
